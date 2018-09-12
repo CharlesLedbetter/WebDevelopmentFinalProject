@@ -1,0 +1,128 @@
+/*Charles Ledbetter / CS290-400 / Final Project*/
+/*universal adjustment*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*basic tags*/
+
+body {
+  font-family: "Arial Black";
+  color: black;
+  background: #d9e4f4;
+  background: -webkit-linear-gradient(#ccfff5, #d9e4f4); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ccfff5, #d9e4f4); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ccfff5, #d9e4f4); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ccfff5, #d9e4f4); /* Standard syntax */
+}
+h1 {
+  text-stroke: 2px #333;
+  font-size: 4.2em;
+  text-align: center;
+}
+h2 {
+  font-size: 3em;
+  text-align: center;
+  margin-top: -.5em;
+}
+form {
+  text-align: center;
+}
+fieldset {
+  padding: 2em;
+  border: .5em groove #333;
+}
+input {
+  font-size: 1.4em;
+  width: 40%;
+}
+input[type=submit] {
+  background-color: #333;
+  margin: .2em .5em;
+  border: none;
+  border-radius: 0;
+  color: #d9e4f4;
+  width: 30%;
+  padding: 0.5em 1em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2em;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+input[type=submit]:hover {
+  outline: solid 2px #333;
+  background-color: #BF7315;
+  color: #333;
+}
+
+/*nav bar*/
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.navitem {
+  float: left;
+}
+.navitem a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navitem a:hover {
+  background-color: #111;
+}
+
+/*main subsection styling classes*/
+
+.backed {
+  height: 68vh;
+  margin: 2em;
+  padding: 4em;
+  background: #B22D04;
+  background: -webkit-linear-gradient(#B22D04, #BF7315); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#B22D04, #BF7315); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#B22D04, #BF7315); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#B22D04, #BF7315); /* Standard syntax */
+}
+.centered {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.outer {
+  background: #d9e4f4;
+  background: -webkit-linear-gradient(#ccfff5, #d9e4f4); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ccfff5, #d9e4f4); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ccfff5, #d9e4f4); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ccfff5, #d9e4f4); /* Standard syntax */
+}
+
+/*footer*/
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  background-color: #333;
+  color: #d9e4f4;
+  height: 5em;
+}
+.copyright {
+  float: right;
+  margin: 1em 2em;
+}
+.copyright a {
+  color: orange;
+  text-decoration: none;
+}
+.copyright a:hover {
+  color: #991f00;
+}

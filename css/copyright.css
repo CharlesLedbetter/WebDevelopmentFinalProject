@@ -1,0 +1,117 @@
+/*Charles Ledbetter / CS290-400 / Final Project*/
+/*universal adjustment*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*basic tags*/
+
+body {
+  font-family: "Arial Black";
+  color: black;
+  background: #d9e4f4;
+  background: -webkit-linear-gradient(#ccfff5, #d9e4f4); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ccfff5, #d9e4f4); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ccfff5, #d9e4f4); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ccfff5, #d9e4f4); /* Standard syntax */
+}
+h1 {
+  font-size: 4.2em;
+  text-align: center;
+}
+p {
+  margin-top: .5em;
+  padding-left: 1.5em;
+  font-size: 1.2em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+img {
+  width: 20em;
+  vertical-align: middle;
+}
+video {
+  width: 20em;
+  vertical-align: middle;
+}
+
+/*nav bar*/
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.navitem {
+  float: left;
+}
+.navitem a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navitem a:hover {
+  background-color: #111;
+}
+
+/*main subsection styling classes*/
+
+.backed {
+  margin: 2em;
+  padding: 4em;
+  background: #B22D04;
+  background: -webkit-linear-gradient(#B22D04, #BF7315); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#B22D04, #BF7315); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#B22D04, #BF7315); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#B22D04, #BF7315); /* Standard syntax */
+}
+.centered {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.fit {
+  margin-top: 6em;
+  vertical-align: middle;
+  float: right;
+}
+
+/*ul replacement to fix nav bar issue*/
+
+.copyrightList {
+  margin-left: 1em;
+  font-size: 1.2em;
+  list-style-type: square;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.copyrightList li {
+  margin-top: 0.5em;
+}
+
+/*footer*/
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  background-color: #333;
+  color: #d9e4f4;
+  height: 5em;
+}
+.copyright {
+  float: right;
+  margin: 1em 2em;
+}
+.copyright a {
+  color: orange;
+  text-decoration: none;
+}
+.copyright a:hover {
+  color: #991f00;
+}

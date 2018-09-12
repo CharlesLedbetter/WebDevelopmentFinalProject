@@ -1,0 +1,170 @@
+/*Charles Ledbetter / CS290-400 / Final Project*/
+/*universal adjustment*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*basic tags*/
+
+body {
+  font-family: "Arial Black";
+  color: black;
+  background: #d9e4f4;
+  background: -webkit-linear-gradient(#ccfff5, #d9e4f4); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ccfff5, #d9e4f4); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ccfff5, #d9e4f4); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ccfff5, #d9e4f4); /* Standard syntax */
+}
+h1 {
+  font-size: 4.2em;
+  text-align: center;
+}
+
+p {
+  font-size: 1.6em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+img {
+  width: 100%;
+  min-width: 35vw;
+}
+a {
+  text-decoration: none;
+}
+
+/*nav bar*/
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.navitem {
+  float: left;
+}
+.navitem a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navitem a:hover {
+  background-color: #111;
+}
+
+/*main subsection styling classes*/
+
+.notbacked {
+  margin: 2em;
+}
+.centered {
+  width: 70%;
+  height: 47vw;
+  margin: auto;
+  text-align: center;
+}
+.floatLeft, .floatRight {
+  margin: auto;
+  padding-top: 1em;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+.grid {
+  height: 100vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 2em;
+}
+.floatLeft img, .floatRight img {
+  margin: auto;
+  width: 100%;
+  min-width: 35vw;
+}
+
+/*buttons*/
+
+.wideButton {
+  background-color: #333;
+  display: block;
+  margin: .5em auto;
+  border: none;
+  border-radius: 0;
+  color: #d9e4f4;
+  width: 75%;
+  padding: 0.5em 2em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 3em;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.wideButton:hover {
+  outline: solid 2px #333;
+  background-color: #d9e4f4;
+  color: #333;
+}
+.leftButton {
+  background-color: #333;
+  margin: .5em 1em;
+  border: none;
+  border-radius: 0;
+  color: #d9e4f4;
+  width: 20%;
+  padding: 0.5em 1em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2em;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.leftButton:hover {
+  outline: solid 2px #333;
+  background-color: #d9e4f4;
+  color: #333;
+}
+.rightButton {
+  background-color: #333;
+  margin: .5em 1em;
+  border: none;
+  border-radius: 0;
+  color: #d9e4f4;
+  width: 20%;
+  padding: 0.5em 1em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2em;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.rightButton:hover {
+  outline: solid 2px #333;
+  background-color: #d9e4f4;
+  color: #333;
+}
+
+/*footer*/
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  background-color: #333;
+  color: #d9e4f4;
+  height: 5em;
+}
+.copyright {
+  float: right;
+  margin: 1em 2em;
+}
+.copyright a {
+  color: orange;
+  text-decoration: none;
+}
+.copyright a:hover {
+  color: #991f00;
+}

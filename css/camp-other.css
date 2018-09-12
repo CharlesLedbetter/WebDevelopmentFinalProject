@@ -1,0 +1,236 @@
+/*Charles Ledbetter / CS290-400 / Final Project*/
+/*universal adjustment*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*basic tags*/
+
+body {
+  font-family: "Arial Black";
+  color: black;
+  background: #d9e4f4;
+  background: -webkit-linear-gradient(#ccfff5, #d9e4f4); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ccfff5, #d9e4f4); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ccfff5, #d9e4f4); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ccfff5, #d9e4f4); /* Standard syntax */
+}
+h1 {
+  font-size: 4.2em;
+  text-align: center;
+}
+h2 {
+  font-size: 3em;
+  text-align: center;
+  margin-top: -.5em;
+}
+h3 {
+  font-size: 1.8em;
+}
+p {
+  font-size: 1.2em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+img {
+  width: 100%;
+  min-width: 35vw;
+}
+section {
+  height: 150vh;
+  padding-bottom: 1.5em;
+}
+a {
+  text-decoration: none;
+}
+
+/*nav bar*/
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.navitem {
+  float: left;
+}
+.navitem a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navitem a:hover {
+  background-color: #111;
+}
+
+/*splash video*/
+
+.topvid {
+  margin-top: 1em;
+}
+
+/*main subsection styling classes*/
+
+.topbacked {
+  margin: 2em;
+  padding: 4em;
+  height: 74%;
+  background: #B22D04;
+  background: -webkit-linear-gradient(#B22D04, #BF7315); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#B22D04, #BF7315); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#B22D04, #BF7315); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#B22D04, #BF7315); /* Standard syntax */
+}
+.backed {
+  margin: 2em;
+  padding: 4em;
+  background: #B22D04;
+  background: -webkit-linear-gradient(#B22D04, #BF7315); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#B22D04, #BF7315); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#B22D04, #BF7315); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#B22D04, #BF7315); /* Standard syntax */
+}
+.notbacked {
+  margin: 2em;
+}
+.grid {
+  height: 275vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 40vh;
+}
+.panel3 .grid {
+  height: 275vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 0;
+}
+.centered {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.floatLeft, .floatRight {
+  margin: auto;
+  padding-top: 1em;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+.floatLeft img, .floatRight img {
+  margin: auto;
+  width: 100%;
+  min-width: 35vw;
+}
+
+/*scroll boxes*/
+
+.scrollboxorange {
+  height:35em;
+  width:auto;
+  overflow:scroll;
+  background: #B22D04;
+  background: -webkit-linear-gradient(#B22D04, #BF7315); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#B22D04, #BF7315); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#B22D04, #BF7315); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#B22D04, #BF7315); /* Standard syntax */
+  scrollbar-base-color:black;
+  padding:2em;
+}
+.scrollboxblue {
+  height:35em;
+  width:auto;
+  overflow:scroll;
+  background: #d9e4f4;
+  background: -webkit-linear-gradient(#ccfff5, #d9e4f4); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ccfff5, #d9e4f4); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ccfff5, #d9e4f4); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ccfff5, #d9e4f4); /* Standard syntax */
+  scrollbar-base-color:black;
+  padding:2em;
+}
+
+/*buttons*/
+
+.wideButton {
+  background-color: #333;
+  display: block;
+  margin: .5em auto;
+  border: none;
+  border-radius: 0;
+  color: #d9e4f4;
+  width: 75%;
+  padding: 0.5em 2em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 3em;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.wideButton:hover {
+  outline: solid 2px #333;
+  background-color: #d9e4f4;
+  color: #333;
+}
+.getButton {
+  background-color: #333;
+  display: block;
+  margin: .5em auto;
+  border: none;
+  border-radius: 0;
+  color: #d9e4f4;
+  width: 90%;
+  padding: 0.5em 2em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 3em;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.getButton:hover {
+  outline: solid 2px #333;
+  background-color: #d9e4f4;
+  color: #333;
+}
+
+/*ul replacement to fix nav bar issue*/
+
+.listFix {
+  margin-left: 1em;
+  font-size: 1.2em;
+  list-style-type: square;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/*footer*/
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  margin: -1em 0;
+  background-color: #333;
+  color: #d9e4f4;
+  height: 7em;
+}
+.copyright {
+  float: right;
+  margin: 1em 2em;
+}
+.copyright a {
+  color: orange;
+  text-decoration: none;
+}
+.copyright a:hover {
+  color: #991f00;
+}
+
+/*adjustment for bottem scrollify panel*/
+
+.panel3{
+  padding-bottom: 0;
+}

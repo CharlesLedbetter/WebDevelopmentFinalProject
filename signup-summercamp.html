@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Summer Camp Sign-up</title>
+    <meta name="description" content="CampAutomaton.campSignUp">
+		<meta name="author" content="Charles Ledbetter">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/signup.css">
+		<script src="script/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <ul class="nav">
+        <li class="navitem"><a href="index.html">Home</a></li>
+        <li class="navitem"><a href="camp.html">Summer Camp</a></li>
+        <li class="navitem"><a href="other.html">Other Events</a></li>
+        <li class="navitem"><a href="about.html">About Us</a></li>
+      </ul>
+    </div>
+
+    <!-- form for signing kids up for camp -->
+    <!-- ran out of time so did not get a chance to implement server side data
+    persistence but did use javascript to write a asynchronous order message -->
+
+    <div class="backed" id="formBacked">
+      <div class="centered">
+        <h1>Summer Camp</h1>
+        <h2>Sign-up</h2>
+        <fieldset class="outer">
+          <form method="post">
+            <legend>Summer Camp</legend>
+            <br/>
+            <label for="Email">Your Email</label>
+            <input type="email" name="Email" id="email">
+            <br/>
+            <label for="Name">Camper's Full Name</label>
+            <input type="text" name="Name" id="camperName">
+            <br/>
+            <label for="Age">Camper's Age Group</label>
+            <select name="Age" id="age">
+              <option value="8-10">8-10</option>
+              <option value="11-13">11-13</option>
+              <option value="14-15">14-15</option>
+              <option value="16-17">16-17</option>
+            </select>
+            <br/>
+            <label for="Session" id="session">Which Session(s)</label>
+            <select name="Session">
+              <option value="S1">Session 1 $7000</option>
+              <option value="S2">Session 2 $7500</option>
+              <option value="S3">Session 3 $7000</option>
+              <option value="S1-2">Sessions 1&amp;2 $13500</option>
+              <option value="S1-3">Sessions 1&amp;3 $13000</option>
+              <option value="S2-3">Sessions 2&amp;3 $13500</option>
+              <option value="S1-2-3">All 3 Sessions $20250</option>
+            </select>
+            <br/>
+            <input type="submit" id="submitForm">
+          </form>
+        </fieldset>
+      </div>
+    </div>
+    <div class="footer">
+      <ul class="nav">
+        <li class="copyright">
+          *No Rights Reserved* All Photos Were Borrowed
+          For the Purpose of This Assignment. for a list of where they are
+          from click <a href="copyright.html">here</a>
+        </li>
+      </ul>
+    </div>
+    <script src="script/csignup.js"></script>
+  </body>
+</html>

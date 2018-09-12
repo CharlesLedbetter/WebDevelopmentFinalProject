@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Order Tickets</title>
+    <meta name="description" content="CampAutomaton.order">
+		<meta name="author" content="Charles Ledbetter">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/signup.css">
+		<script src="script/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <ul class="nav">
+        <li class="navitem"><a href="index.html">Home</a></li>
+        <li class="navitem"><a href="camp.html">Summer Camp</a></li>
+        <li class="navitem"><a href="other.html">Other Events</a></li>
+        <li class="navitem"><a href="about.html">About Us</a></li>
+      </ul>
+    </div>
+
+    <!-- form for ordering tickets -->
+    <!-- ran out of time so did not get a chance to implement server side data
+    persistence but did use javascript to write a asynchronous order message -->
+
+    <div class="backed" id="formBacked">
+      <div class="centered">
+        <h1>Drone Grand Prix</h1>
+        <h2>Order Tickets</h2>
+        <fieldset class="outer">
+        <form method="post">
+            <legend>Drone Grand Prix Tickets</legend>
+            <br/>
+            <label for="Email">Your Email</label>
+            <input type="email" name="Email" id="email">
+            <br/>
+            <label for="Name">Full Name</label>
+            <input type="text" name="Name" id="camperName">
+            <br/>
+            <label for="Session">Which Event</label>
+            <select name="Session">
+              <option>
+                New England Automatons: Brooklyn, New York, USA
+              </option>
+              <option>
+                New England Robotics Puzzle League: Nashua, New Hampshire, USA
+              </option>
+              <option>
+                West Coast Drone Racers: Los Angeles, California, USA
+              </option>
+              <option>
+                Bay Area Automatons: San Fransisco, California, USA
+              </option>
+              <option>
+                Mountain Top Drone Racers League: Bolder, Colorado, USA
+              </option>
+              <option>
+                Rocky Mountain Automatons: Denver, Colorado, USA
+              </option>
+              <option>
+                South West Automatons: Albuquerque, New Mexico, USA</option>
+              <option>
+                Texas Drone League: Dallas, Texas, USA
+              </option>
+              <option>
+                MidSouth Drone Racers: Louisville, Kentucky, USA
+              </option>
+              <option>
+                Southern US Automaton Competition League: Atlanta, Georgia, USA
+              </option>
+              <option>
+                Great Lakes Drone Racing League: St. Cloud, Minnesota, USA
+              </option>
+              <option>
+                MidWest Automatons: Detroit, Michigan, USA
+              </option>
+              <option>
+                B.C. Drone Racing League: Vancouver, British Columbia, Canada
+              </option>
+              <option>
+                Ontario Automatons: Toronto, Ontario, Canada
+              </option>
+              <option>
+                Tokyo Flyers Drone Racer League: Tokyo, Kanto, Japan
+              </option>
+              <option>
+                Kansai-Shikoku Drone Racers League: Osaka, Kansai, Japan
+              </option>
+            </select>
+            <br/>
+            <input type="submit" id="submitForm">
+        </form>
+      </fieldset>
+      </div>
+    </div>
+    <div class="footer">
+      <ul class="nav">
+        <li class="copyright">
+          *No Rights Reserved* All Photos Were Borrowed For the Purpose of
+          this Assignment. for a list of where they are from click
+          <a href="copyright.html">here</a>
+        </li>
+      </ul>
+    </div>
+    <script src="script/ordertickets.js"></script>
+  </body>
+</html>
